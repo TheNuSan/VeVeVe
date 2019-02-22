@@ -1,0 +1,1 @@
+{"version":"0.0.1","author":"NuSan","code":"function update()\n local t=getTime()\n local pcount=500\n srand(flr(t*2.0))\n\n for i=0,pcount do\n   line(rnd(2)-1,rnd(2)-1,rnd(2)-1,rnd(2)-1,rnd())\n end\nend\n"}

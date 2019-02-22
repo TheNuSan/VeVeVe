@@ -1,0 +1,1 @@
+{"version":"0.0.1","author":"NuSan","code":"function update()\n local t=getTime()\n local pcount=50\n for i=0,pcount do\n   local f = i/pcount\n   local p = abs(sin(f*3.1415+sin(t)*4))\n   point(f*0.5-0.5, f-0.5, p)\n   point(f*0.5, 0.5-f, p)\n   point(f*0.5-0.25, 0.0, p)\n end\nend\n"}

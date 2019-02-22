@@ -1,0 +1,1 @@
+{"version":"0.0.1","author":"NuSan","code":"function update()\n local t=getTime()\n local pcount=1000\n for i=0,pcount do\n   local f=i/pcount\n   local v=f*200.0+t\n   local d=0.0+pow(f,0.5)*0.8*(1+sin(f*1.25+t*2)*0.5)\n   v = v+sin(f*4.0)*1.8;\n   point(cos(v)*d, sin(v)*d, abs(sin(f*50.0)))\n end\nend\n"}
